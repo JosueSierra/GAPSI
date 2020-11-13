@@ -1,0 +1,6 @@
+framework module Pods_GAPSITests {
+  umbrella header "Pods-GAPSITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
