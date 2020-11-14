@@ -21,6 +21,7 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
+        loadWindow()
         let headers: HTTPHeaders = [
                     "X-IBM-Client-Id": "7cb89f3e-6b59-4166-9f01-68e56a3fead8"
                 ]
@@ -29,6 +30,7 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
         
                     self.products = (response.value! as! NSDictionary).value(forKey: "items") as! NSArray
                     self.tableView.reloadData()
+                    self.dismiss(animated: true, completion: nil)
                 }
     }
     
@@ -38,9 +40,7 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
         tableView.reloadData()
     }
     
-    func searchBarResultsListButtonClicked(_ searchBar: UISearchBar) {
-        
-    }
+   
     
     
     
