@@ -11,9 +11,9 @@ import UIKit
 
 class Request {
     
-    public let instance = Request()
+    static public let instance = Request()
     
-    public func searchProducts(_ keys: [String])->String{
+    public func searchProducts(_ keys: String)->String{
         return "https://00672285.us-south.apigw.appdomain.cloud/demo-gapsi/search?&query=\(keys)"
         
     }

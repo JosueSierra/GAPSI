@@ -18,6 +18,7 @@
 		9CCBA05D255F3DF0003C41B6 /* GAPSIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA05C255F3DF0003C41B6 /* GAPSIUITests.swift */; };
 		9CCBA06B255F451C003C41B6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06A255F451C003C41B6 /* Request.swift */; };
 		9CCBA06D255F4C5D003C41B6 /* ProductsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06C255F4C5D003C41B6 /* ProductsViewCell.swift */; };
+		9CCBA06F255F5330003C41B6 /* ProductFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06E255F5330003C41B6 /* ProductFinder.swift */; };
 		A9A25BDEDABABC1BD9548F2E /* Pods_GAPSI_GAPSIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32E17A8EB70D5B4194E30B9 /* Pods_GAPSI_GAPSIUITests.framework */; };
 		EE967451508ED7FFE877914F /* Pods_GAPSITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D4C05569FF1126BABF8E0F /* Pods_GAPSITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		9CCBA05E255F3DF0003C41B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CCBA06A255F451C003C41B6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		9CCBA06C255F4C5D003C41B6 /* ProductsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewCell.swift; sourceTree = "<group>"; };
+		9CCBA06E255F5330003C41B6 /* ProductFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFinder.swift; sourceTree = "<group>"; };
 		A32E17A8EB70D5B4194E30B9 /* Pods_GAPSI_GAPSIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAPSI_GAPSIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3844796DF9783F7108886D3 /* Pods-GAPSITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSITests.release.xcconfig"; path = "Target Support Files/Pods-GAPSITests/Pods-GAPSITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 				9CCBA03A255F3DEB003C41B6 /* AppDelegate.swift */,
 				9CCBA03C255F3DEB003C41B6 /* SceneDelegate.swift */,
 				9CCBA03E255F3DEB003C41B6 /* ViewController.swift */,
+				9CCBA06E255F5330003C41B6 /* ProductFinder.swift */,
 				9CCBA040255F3DEB003C41B6 /* Main.storyboard */,
 				9CCBA043255F3DF0003C41B6 /* Assets.xcassets */,
 				9CCBA045255F3DF0003C41B6 /* LaunchScreen.storyboard */,
@@ -418,6 +421,7 @@
 				9CCBA06B255F451C003C41B6 /* Request.swift in Sources */,
 				9CCBA03B255F3DEB003C41B6 /* AppDelegate.swift in Sources */,
 				9CCBA03D255F3DEB003C41B6 /* SceneDelegate.swift in Sources */,
+				9CCBA06F255F5330003C41B6 /* ProductFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

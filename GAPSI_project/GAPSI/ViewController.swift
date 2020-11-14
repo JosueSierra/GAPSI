@@ -10,29 +10,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
+    var products = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.becomeFirstResponder()
+        tableView.reloadData()
         // Do any additional setup after loading the view.
     }
-
 
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        
+        return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellProducts", for: indexPath) as! ProductsViewCell
         
-        cell.lblName.text = "Pepe"
-        cell.lblPrice.text = "$450"
+        let titles = (products).value(forKey: "title") as! [String]
+        let prices = (products).value(forKey: "price") as! [NSNumber]
+        
+        cell.lblName.text = "\(titles[indexPath.row])"
+        cell.lblPrice.text = "\(ceil(Double(prices[indexPath.row])))"
         
         return cell
+    }
+    
+    func convertUrlToImage(_ url: String)->UIImage {
+        return UIImage()
     }
     
     
