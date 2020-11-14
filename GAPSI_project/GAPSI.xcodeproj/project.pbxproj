@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		768F740A45CD05FED849E5EF /* Pods_GAPSI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2A28CFB2AC680DE8108250 /* Pods_GAPSI.framework */; };
 		9CCBA03B255F3DEB003C41B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA03A255F3DEB003C41B6 /* AppDelegate.swift */; };
 		9CCBA03D255F3DEB003C41B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA03C255F3DEB003C41B6 /* SceneDelegate.swift */; };
 		9CCBA03F255F3DEB003C41B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA03E255F3DEB003C41B6 /* ViewController.swift */; };
@@ -15,6 +16,11 @@
 		9CCBA047255F3DF0003C41B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CCBA045255F3DF0003C41B6 /* LaunchScreen.storyboard */; };
 		9CCBA052255F3DF0003C41B6 /* GAPSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA051255F3DF0003C41B6 /* GAPSITests.swift */; };
 		9CCBA05D255F3DF0003C41B6 /* GAPSIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA05C255F3DF0003C41B6 /* GAPSIUITests.swift */; };
+		9CCBA06B255F451C003C41B6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06A255F451C003C41B6 /* Request.swift */; };
+		9CCBA06D255F4C5D003C41B6 /* ProductsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06C255F4C5D003C41B6 /* ProductsViewCell.swift */; };
+		9CCBA06F255F5330003C41B6 /* ProductFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCBA06E255F5330003C41B6 /* ProductFinder.swift */; };
+		A9A25BDEDABABC1BD9548F2E /* Pods_GAPSI_GAPSIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32E17A8EB70D5B4194E30B9 /* Pods_GAPSI_GAPSIUITests.framework */; };
+		EE967451508ED7FFE877914F /* Pods_GAPSITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D4C05569FF1126BABF8E0F /* Pods_GAPSITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25A53CF4502F37AC254A9BD6 /* Pods-GAPSI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSI.debug.xcconfig"; path = "Target Support Files/Pods-GAPSI/Pods-GAPSI.debug.xcconfig"; sourceTree = "<group>"; };
+		2A2A28CFB2AC680DE8108250 /* Pods_GAPSI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAPSI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDC279C776940EC0B01A964 /* Pods-GAPSI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSI.release.xcconfig"; path = "Target Support Files/Pods-GAPSI/Pods-GAPSI.release.xcconfig"; sourceTree = "<group>"; };
+		2DE7BEED5D72A9290D246B5D /* Pods-GAPSI-GAPSIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSI-GAPSIUITests.release.xcconfig"; path = "Target Support Files/Pods-GAPSI-GAPSIUITests/Pods-GAPSI-GAPSIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47D4C05569FF1126BABF8E0F /* Pods_GAPSITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAPSITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C30559A7230039114BCD075 /* Pods-GAPSITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSITests.debug.xcconfig"; path = "Target Support Files/Pods-GAPSITests/Pods-GAPSITests.debug.xcconfig"; sourceTree = "<group>"; };
+		61F23E663342493731C57A1C /* Pods-GAPSI-GAPSIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSI-GAPSIUITests.debug.xcconfig"; path = "Target Support Files/Pods-GAPSI-GAPSIUITests/Pods-GAPSI-GAPSIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CCBA037255F3DEB003C41B6 /* GAPSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAPSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCBA03A255F3DEB003C41B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CCBA03C255F3DEB003C41B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		9CCBA058255F3DF0003C41B6 /* GAPSIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAPSIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCBA05C255F3DF0003C41B6 /* GAPSIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIUITests.swift; sourceTree = "<group>"; };
 		9CCBA05E255F3DF0003C41B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CCBA06A255F451C003C41B6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9CCBA06C255F4C5D003C41B6 /* ProductsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewCell.swift; sourceTree = "<group>"; };
+		9CCBA06E255F5330003C41B6 /* ProductFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFinder.swift; sourceTree = "<group>"; };
+		A32E17A8EB70D5B4194E30B9 /* Pods_GAPSI_GAPSIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAPSI_GAPSIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3844796DF9783F7108886D3 /* Pods-GAPSITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAPSITests.release.xcconfig"; path = "Target Support Files/Pods-GAPSITests/Pods-GAPSITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768F740A45CD05FED849E5EF /* Pods_GAPSI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE967451508ED7FFE877914F /* Pods_GAPSITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A25BDEDABABC1BD9548F2E /* Pods_GAPSI_GAPSIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23432509BEAE75F1A8924960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A2A28CFB2AC680DE8108250 /* Pods_GAPSI.framework */,
+				A32E17A8EB70D5B4194E30B9 /* Pods_GAPSI_GAPSIUITests.framework */,
+				47D4C05569FF1126BABF8E0F /* Pods_GAPSITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ED15F261B21D43005F8C6BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25A53CF4502F37AC254A9BD6 /* Pods-GAPSI.debug.xcconfig */,
+				2BDC279C776940EC0B01A964 /* Pods-GAPSI.release.xcconfig */,
+				61F23E663342493731C57A1C /* Pods-GAPSI-GAPSIUITests.debug.xcconfig */,
+				2DE7BEED5D72A9290D246B5D /* Pods-GAPSI-GAPSIUITests.release.xcconfig */,
+				5C30559A7230039114BCD075 /* Pods-GAPSITests.debug.xcconfig */,
+				C3844796DF9783F7108886D3 /* Pods-GAPSITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9CCBA02E255F3DEA003C41B6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				9CCBA050255F3DF0003C41B6 /* GAPSITests */,
 				9CCBA05B255F3DF0003C41B6 /* GAPSIUITests */,
 				9CCBA038255F3DEB003C41B6 /* Products */,
+				7ED15F261B21D43005F8C6BE /* Pods */,
+				23432509BEAE75F1A8924960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +148,13 @@
 				9CCBA03A255F3DEB003C41B6 /* AppDelegate.swift */,
 				9CCBA03C255F3DEB003C41B6 /* SceneDelegate.swift */,
 				9CCBA03E255F3DEB003C41B6 /* ViewController.swift */,
+				9CCBA06E255F5330003C41B6 /* ProductFinder.swift */,
 				9CCBA040255F3DEB003C41B6 /* Main.storyboard */,
 				9CCBA043255F3DF0003C41B6 /* Assets.xcassets */,
 				9CCBA045255F3DF0003C41B6 /* LaunchScreen.storyboard */,
 				9CCBA048255F3DF0003C41B6 /* Info.plist */,
+				9CCBA06A255F451C003C41B6 /* Request.swift */,
+				9CCBA06C255F4C5D003C41B6 /* ProductsViewCell.swift */,
 			);
 			path = GAPSI;
 			sourceTree = "<group>";
@@ -135,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CCBA061255F3DF0003C41B6 /* Build configuration list for PBXNativeTarget "GAPSI" */;
 			buildPhases = (
+				813ABC7151D8A882DCFB9475 /* [CP] Check Pods Manifest.lock */,
 				9CCBA033255F3DEB003C41B6 /* Sources */,
 				9CCBA034255F3DEB003C41B6 /* Frameworks */,
 				9CCBA035255F3DEB003C41B6 /* Resources */,
+				ADA805D62D5D6D495EC770AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CCBA064255F3DF0003C41B6 /* Build configuration list for PBXNativeTarget "GAPSITests" */;
 			buildPhases = (
+				E137821A5684AC0B8DBA4E7D /* [CP] Check Pods Manifest.lock */,
 				9CCBA049255F3DF0003C41B6 /* Sources */,
 				9CCBA04A255F3DF0003C41B6 /* Frameworks */,
 				9CCBA04B255F3DF0003C41B6 /* Resources */,
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CCBA067255F3DF0003C41B6 /* Build configuration list for PBXNativeTarget "GAPSIUITests" */;
 			buildPhases = (
+				09675BF8FD7DB5E28DFEAF96 /* [CP] Check Pods Manifest.lock */,
 				9CCBA054255F3DF0003C41B6 /* Sources */,
 				9CCBA055255F3DF0003C41B6 /* Frameworks */,
 				9CCBA056255F3DF0003C41B6 /* Resources */,
+				457C12553E6404B6ED5F0FA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +308,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09675BF8FD7DB5E28DFEAF96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAPSI-GAPSIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		457C12553E6404B6ED5F0FA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAPSI-GAPSIUITests/Pods-GAPSI-GAPSIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAPSI-GAPSIUITests/Pods-GAPSI-GAPSIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAPSI-GAPSIUITests/Pods-GAPSI-GAPSIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813ABC7151D8A882DCFB9475 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAPSI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADA805D62D5D6D495EC770AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAPSI/Pods-GAPSI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GAPSI/Pods-GAPSI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GAPSI/Pods-GAPSI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E137821A5684AC0B8DBA4E7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAPSITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9CCBA033255F3DEB003C41B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CCBA06D255F4C5D003C41B6 /* ProductsViewCell.swift in Sources */,
 				9CCBA03F255F3DEB003C41B6 /* ViewController.swift in Sources */,
+				9CCBA06B255F451C003C41B6 /* Request.swift in Sources */,
 				9CCBA03B255F3DEB003C41B6 /* AppDelegate.swift in Sources */,
 				9CCBA03D255F3DEB003C41B6 /* SceneDelegate.swift in Sources */,
+				9CCBA06F255F5330003C41B6 /* ProductFinder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -432,9 +592,11 @@
 		};
 		9CCBA062255F3DF0003C41B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A53CF4502F37AC254A9BD6 /* Pods-GAPSI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZQ2NX3EL5;
 				INFOPLIST_FILE = GAPSI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,15 +605,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josue.GAPSI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9CCBA063255F3DF0003C41B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BDC279C776940EC0B01A964 /* Pods-GAPSI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZQ2NX3EL5;
 				INFOPLIST_FILE = GAPSI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,12 +624,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josue.GAPSI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9CCBA065255F3DF0003C41B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C30559A7230039114BCD075 /* Pods-GAPSITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +652,7 @@
 		};
 		9CCBA066255F3DF0003C41B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3844796DF9783F7108886D3 /* Pods-GAPSITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +674,7 @@
 		};
 		9CCBA068255F3DF0003C41B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F23E663342493731C57A1C /* Pods-GAPSI-GAPSIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +694,7 @@
 		};
 		9CCBA069255F3DF0003C41B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE7BEED5D72A9290D246B5D /* Pods-GAPSI-GAPSIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
