@@ -14,24 +14,22 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
     
     
     func updateSearchResults(for searchController: UISearchController) {
-         searchController.showsSearchResultsController = true
+        searchController.showsSearchResultsController = true
     }
-    
-    
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         loadWindow()
         let headers: HTTPHeaders = [
-                    "X-IBM-Client-Id": "7cb89f3e-6b59-4166-9f01-68e56a3fead8"
-                ]
+            "X-IBM-Client-Id": "7cb89f3e-6b59-4166-9f01-68e56a3fead8"
+        ]
         let urlRequest = Request.instance.searchProducts(searchBar.text!)
-                var requestProduct = AF.request(urlRequest, method: .get,   headers: headers).responseJSON { (response) in
-        
-                    self.products = (response.value! as! NSDictionary).value(forKey: "items") as! NSArray
-                    self.tableView.reloadData()
-                    self.dismiss(animated: true, completion: nil)
-                }
+        var requestProduct = AF.request(urlRequest, method: .get,   headers: headers).responseJSON { (response) in
+            
+            self.products = (response.value! as! NSDictionary).value(forKey: "items") as! NSArray
+            self.tableView.reloadData()
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
@@ -39,9 +37,6 @@ extension ViewController: UISearchBarDelegate, UISearchResultsUpdating {
         products = []
         tableView.reloadData()
     }
-    
-   
-    
     
     
 }

@@ -15,7 +15,6 @@ class Request {
     
     public func searchProducts(_ keys: String)->String{
         return "https://00672285.us-south.apigw.appdomain.cloud/demo-gapsi/search?&query=\(keys)"
-        
     }
 }
 

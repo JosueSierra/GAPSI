@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,19 +23,19 @@ class ViewController: UIViewController {
     }
     
     public func loadWindow(){
-           let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-           
-           alert.view.tintColor = UIColor.black
-           let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect.init(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
-           loadingIndicator.hidesWhenStopped = true
+        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+        
+        alert.view.tintColor = UIColor.black
+        let loadingIndicator: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect.init(x: 10, y: 5, width: 50, height: 50)) as UIActivityIndicatorView
+        loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
-           loadingIndicator.startAnimating();
-           
-           alert.view.addSubview(loadingIndicator)
+        loadingIndicator.startAnimating();
+        
+        alert.view.addSubview(loadingIndicator)
         present(alert, animated: true, completion: nil)
-           
-       }
-
+        
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
@@ -61,11 +61,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func convertUrlToImage(_ url: String)->UIImage {
         let url = URL(string: url)
-           if let data = try? Data(contentsOf: url!)
-           {
+        if let data = try? Data(contentsOf: url!)
+        {
             let image: UIImage = UIImage(data: data)!
             return image
-           }
+        }
         return UIImage()
     }
     
